@@ -1,0 +1,11 @@
+--- origsrc/boolball-0.6/boolball/Makefile.am	2005-04-06 14:32:54.000000000 -0500
++++ src/boolball-0.6/boolball/Makefile.am	2008-08-29 02:26:02.882540600 -0500
+@@ -16,7 +16,7 @@
+ 			player.c player.h \
+ 			prefs.c prefs.h \
+ 			scorebox.c scorebox.h
+-boolball_LDADD=		${BOOLBALL_LIBS} ../libboard/libboard.la
++boolball_LDADD=		../libboard/libboard.la ${BOOLBALL_LIBS}
+ 
+ INCLUDES=		${BOOLBALL_CFLAGS} ${DFLAGS} -I$(top_srcdir)/libboard \
+ 			-DGNOMELOCALEDIR=\""$(datadir)/locale"\" \

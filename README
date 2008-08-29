@@ -1,0 +1,102 @@
+boolball
+-------------------------------------------
+Boolball is a close copy of the game Boloball.
+
+The objective, as with many games, is to score more points than your
+opponent. Each player has a row of balls, located at the top of the
+screen, which can be dropped into a field of obstacles. Players take
+turns dropping one of their balls. The lower the balls fall, the higher
+the score (2 points per row). The bottom of the field is worth even
+more: 60 points.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  GConf2-2.22.0-1
+  gdk-pixbuf2-2.12.11-1
+  glib2-2.16.5-1
+  gtk2-x11-2.12.11-1
+  libglade2-2.6.3-1
+  libgnome2-2.22.0-1
+  libgnomeui2-2.22.1-1
+  libintl8-0.15-1
+
+Build requirements:
+  autoconf2.5-2.61-1
+  automake1.7-1.7.9-3
+  binutils-20080624-2
+  cygport-0.4.0-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gnome-common-2.20.0-2
+  intltool-0.40.3-1
+  libtool-2.2.2-2
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical homepage:
+  http://home.student.utwente.nl/t.vanklaveren/boolball/ (defunct)
+
+Canonical download:
+  http://home.student.utwente.nl/t.vanklaveren/distfiles/ (defunct)
+  http://www.sourcefiles.org/Games/Puzzle/
+
+-------------------------------------------
+
+Build instructions:
+  unpack boolball-0.6-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./boolball-0.6-1.cygport all
+
+This will create:
+  /usr/src/boolball-0.6-1-src.tar.bz2
+  /usr/src/boolball-0.6-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/boolball.schemas
+  /etc/postinstall/boolball.sh
+  /usr/bin/boolball.exe
+  /usr/share/applications/boolball.desktop
+  /usr/share/boolball/ball-blue.svg
+  /usr/share/boolball/ball-red.svg
+  /usr/share/boolball/block-blue-left.svg
+  /usr/share/boolball/block-blue-right.svg
+  /usr/share/boolball/block-blue.svg
+  /usr/share/boolball/block-bonus.svg
+  /usr/share/boolball/block-gray.svg
+  /usr/share/boolball/boolball.glade
+  /usr/share/boolball/player-blue-drop.svg
+  /usr/share/boolball/player-blue-even.svg
+  /usr/share/boolball/player-blue-odd.svg
+  /usr/share/boolball/player-red-drop.svg
+  /usr/share/boolball/player-red-even.svg
+  /usr/share/boolball/player-red-odd.svg
+  /usr/share/boolball/teleporter.svg
+  /usr/share/doc/Cygwin/boolball-0.6.README
+  /usr/share/doc/boolball-0.6/AUTHORS
+  /usr/share/doc/boolball-0.6/ChangeLog
+  /usr/share/doc/boolball-0.6/COPYING
+  /usr/share/doc/boolball-0.6/INSTALL
+  /usr/share/doc/boolball-0.6/NEWS
+  /usr/share/doc/boolball-0.6/README
+  /usr/share/doc/boolball-0.6/TODO
+  /usr/share/locale/nl/LC_MESSAGES/boolball.mo
+  /usr/share/pixmaps/boolball.png
+  /var/lib/games/boolball.large.scores
+  /var/lib/games/boolball.medium.scores
+  /var/lib/games/boolball.small.scores
+
+------------------
+
+Port Notes:
+
+----- version 0.6-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:  http://cygwin-ports.sourceforge.net/

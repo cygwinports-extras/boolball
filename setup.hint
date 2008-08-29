@@ -1,0 +1,11 @@
+category: Games Gnome
+requires: cygwin GConf2 glib2 gtk2-x11 libglade2 libgnome2 libgnomeui2 libintl8
+sdesc: "GNOME Boloball game"
+ldesc: "Boolball is a close copy of the game Boloball.
+
+The objective, as with many games, is to score more points than your
+opponent. Each player has a row of balls, located at the top of the
+screen, which can be dropped into a field of obstacles. Players take
+turns dropping one of their balls. The lower the balls fall, the higher
+the score (2 points per row). The bottom of the field is worth even
+more; 60 points."
