@@ -1,0 +1,11 @@
+--- origsrc/boolball-0.6/boolball/Makefile.am	2009-04-19 02:19:41.593668700 -0500
++++ src/boolball-0.6/boolball/Makefile.am	2009-04-19 02:32:21.749918700 -0500
+@@ -40,7 +40,7 @@ install-data-local:
+ 		chown $(scores_user):$(scores_group) $(DESTDIR)$(scoredir)/boolball."$$i".scores; \
+ 		chmod 664 $(DESTDIR)$(scoredir)/boolball."$$i".scores; \
+ 	 done
+-	-if test "x$(setgid)" = "xtrue"; then chgrp $(scores_group) $(DESTDIR)$(bindir)/boolball && chmod 2555 $(DESTDIR)$(bindir)/boolball; fi
++	-if test "x$(setgid)" = "xtrue"; then chgrp $(scores_group) $(DESTDIR)$(bindir)/boolball$(EXEEXT) && chmod 2555 $(DESTDIR)$(bindir)/boolball$(EXEEXT); fi
+ 
+ uninstall-local:
+ 	-for i in ${LEVELS}; do \
