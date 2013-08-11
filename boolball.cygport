@@ -1,0 +1,21 @@
+inherit gnome2
+
+NAME="boolball"
+VERSION=0.6
+RELEASE=10
+CATEGORY="Games"
+SUMMARY="GNOME Boloball game"
+DESCRIPTION="Boolball is a close copy of the game Boloball.Each player has a
+row of balls, located at the top of the screen, which can be dropped into a
+field of obstacles. Players take turns dropping one of their balls. The lower
+the balls fall, the higher the score (2 points per row). The bottom of the
+field is worth even more; 60 points."
+HOMEPAGE="http://linux.softpedia.com/get/GAMES-ENTERTAINMENT/Arcade/Boolball-3445.shtml"
+SRC_URI="http://www.sourcefiles.org/Games/Puzzle/boolball-${VERSION}.tar.gz"
+PATCH_URI="0.6-as-needed.patch
+           0.6-autoconf.patch
+           0.6-exeext.patch"
+
+# minimum required by libtool-2.4
+WANT_AUTOMAKE=1.9
+CYGCONF_ARGS="--with-scores-group=$(id -gn) --with-scores-user=$(id -un)"
